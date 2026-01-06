@@ -39,20 +39,31 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom tokens for accessibility playground */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 0%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    /* Issue card severity colors */
+    --severity-high: 0 84% 60%;
+    --severity-medium: 38 92% 50%;
+    --severity-low: 142 76% 36%;
+    
+    /* Issue type colors */
+    --type-automated: 262 83% 58%;
+    --type-guided: 199 89% 48%;
+    --type-manual: 142 76% 36%;
   }
 
   .dark {
@@ -91,6 +102,22 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom tokens for accessibility playground - dark mode */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 0%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    --severity-high: 0 84% 60%;
+    --severity-medium: 38 92% 50%;
+    --severity-low: 142 76% 36%;
+    
+    --type-automated: 262 83% 68%;
+    --type-guided: 199 89% 58%;
+    --type-manual: 142 76% 46%;
   }
 }
 
