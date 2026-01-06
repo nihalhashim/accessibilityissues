@@ -1,14 +1,8 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# Accessibility Audit Playground - Prevent indexing
+# This site intentionally contains accessibility issues for testing purposes
 
 User-agent: *
-Allow: /
+Disallow: /
+
+# For accessibility auditing tools that need a sitemap, see /sitemap.xml
+# Note: This site should NEVER be indexed by search engines
