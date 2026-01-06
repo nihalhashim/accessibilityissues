@@ -242,7 +242,7 @@ export default function AutomatedAriaMisuse() {
               className="px-4 py-2 bg-secondary text-secondary-foreground rounded"
             >
               Toggle Menu (invalid aria-expanded="yes")
-            </button>
+            </div>
           </div>
         </section>
 
