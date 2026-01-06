@@ -233,8 +233,9 @@ export default function AutomatedAriaMisuse() {
           <IssueCard issue={ariaIssues[3]} />
           <div className="p-4 border border-border rounded-lg bg-card">
             {/* ISSUE: aria-expanded should be "true" or "false", not "yes" */}
+            {/* @ts-expect-error - Intentionally invalid for accessibility demo */}
             <button
-              aria-expanded="yes"
+              aria-expanded={"yes" as unknown as boolean}
               data-issue-id="AX-047"
               data-issue-type="automated"
               data-wcag="4.1.2"
