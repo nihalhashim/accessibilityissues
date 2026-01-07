@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Table, BookOpen, FileText, Keyboard, Monitor, Navigation, AlertCircle, ListOrdered, Ear, Globe, Brain, Subtitles, Image, Palette, Code } from 'lucide-react';
+import { Home, Table, BookOpen, Cog, Keyboard, ClipboardCheck } from 'lucide-react';
 
 interface NavItem {
   title: string;
@@ -22,41 +22,15 @@ const navSections: NavSection[] = [
     ],
   },
   {
-    title: 'Automated Issues',
+    title: 'Issue Pages',
     items: [
-      { title: 'Forms', href: '/automated/forms', icon: FileText },
-      { title: 'Structure', href: '/automated/structure', icon: ListOrdered },
-      { title: 'Media', href: '/automated/media', icon: Image },
-      { title: 'Color Contrast', href: '/automated/color-contrast', icon: Palette },
-      { title: 'ARIA Misuse', href: '/automated/aria-misuse', icon: Code },
-    ],
-  },
-  {
-    title: 'Guided Issues',
-    items: [
-      { title: 'Keyboard & Focus', href: '/guided/keyboard-focus', icon: Keyboard },
-      { title: 'Modals & Dynamic', href: '/guided/modals-dynamic', icon: Monitor },
-      { title: 'Navigation & Links', href: '/guided/navigation-links', icon: Navigation },
-      { title: 'Errors & Feedback', href: '/guided/errors-feedback', icon: AlertCircle },
-    ],
-  },
-  {
-    title: 'Manual Issues',
-    items: [
-      { title: 'Meaningful Sequence', href: '/manual/meaningful-sequence', icon: ListOrdered },
-      { title: 'Sensory Instructions', href: '/manual/instructions-sensory', icon: Ear },
-      { title: 'Reading & Language', href: '/manual/reading-language', icon: Globe },
-      { title: 'Cognitive Load', href: '/manual/cognitive-load', icon: Brain },
-      { title: 'Captions Quality', href: '/manual/captions-quality', icon: Subtitles },
+      { title: 'Automated Issues', href: '/automated', icon: Cog },
+      { title: 'Guided Issues', href: '/guided', icon: Keyboard },
+      { title: 'Manual Issues', href: '/manual', icon: ClipboardCheck },
     ],
   },
 ];
 
-/**
- * AppSidebar - Main navigation sidebar
- * 
- * Contains navigation links to all pages organized by audit type.
- */
 export function AppSidebar() {
   const location = useLocation();
 
