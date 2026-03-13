@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Table, BookOpen, Cog, Keyboard, ClipboardCheck } from 'lucide-react';
+import { Home, Table, BookOpen, Cog, Keyboard, ClipboardCheck, ShieldCheck } from 'lucide-react';
 
 interface NavItem {
   title: string;
@@ -27,6 +27,7 @@ const navSections: NavSection[] = [
       { title: 'Automated Issues', href: '/automated', icon: Cog },
       { title: 'Guided Issues', href: '/guided', icon: Keyboard },
       { title: 'Manual Issues', href: '/manual', icon: ClipboardCheck },
+      { title: 'IBM Checks', href: '/ibm-checks', icon: ShieldCheck },
     ],
   },
 ];

@@ -13,6 +13,7 @@ import Readme from "./pages/Readme";
 import Automated from "./pages/Automated";
 import Guided from "./pages/Guided";
 import Manual from "./pages/Manual";
+import IBMChecks from "./pages/IBMChecks";
 
 import NotFound from "./pages/NotFound";
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/automated" element={<Automated />} />
           <Route path="/guided" element={<Guided />} />
           <Route path="/manual" element={<Manual />} />
+          <Route path="/ibm-checks" element={<IBMChecks />} />
 
           {/* 404 Catch-all */}
           <Route path="*" element={<NotFound />} />
