@@ -173,7 +173,7 @@ export default function AutomatedIssues() {
             </div>
 
             {/* AX-008: Select without label */}
-            <div id="AX-008">
+            {/* <div id="AX-008">
               <IssueCard issue={formIssues[7]} />
               <div className="p-4 border border-border rounded-lg bg-card">
                 <select data-issue-id="AX-008" data-issue-type="automated" data-wcag="1.3.1,3.3.2" className="border border-input rounded px-3 py-2">
@@ -182,7 +182,7 @@ export default function AutomatedIssues() {
                   <option value="est">Eastern Time</option>
                 </select>
               </div>
-            </div>
+            </div> */}
 
             {/* AX-009: Textarea without label */}
             <div id="AX-009">
